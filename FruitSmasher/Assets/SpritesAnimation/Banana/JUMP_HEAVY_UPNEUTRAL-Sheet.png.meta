@@ -126,12 +126,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 3
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_2
       rect:
         serializedVersion: 2
-        x: 101
-        y: 2
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_3
       rect:
         serializedVersion: 2
-        x: 149
-        y: 2
-        width: 20
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_4
       rect:
         serializedVersion: 2
-        x: 195
-        y: 1
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_5
       rect:
         serializedVersion: 2
-        x: 247
-        y: 4
-        width: 22
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_6
       rect:
         serializedVersion: 2
-        x: 296
-        y: 3
-        width: 22
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_7
       rect:
         serializedVersion: 2
-        x: 343
-        y: 3
-        width: 21
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_8
       rect:
         serializedVersion: 2
-        x: 390
-        y: 3
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_9
       rect:
         serializedVersion: 2
-        x: 439
-        y: 3
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,12 +336,12 @@ TextureImporter:
       name: FLOOR_HEAVY_UP-Sheet_10
       rect:
         serializedVersion: 2
-        x: 487
-        y: 4
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

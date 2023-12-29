@@ -126,12 +126,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 8
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 8
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,11 +169,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 8
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,11 +190,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 8
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_4
       rect:
         serializedVersion: 2
-        x: 198
-        y: 8
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_5
       rect:
         serializedVersion: 2
-        x: 248
-        y: 8
-        width: 39
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_6
       rect:
         serializedVersion: 2
-        x: 303
-        y: 8
-        width: 36
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: FLOOR_HEAVY_NEUTRAL-Sheet_7
       rect:
         serializedVersion: 2
-        x: 346
-        y: 8
-        width: 38
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,22 +291,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLOOR_HEAVY_NEUTRAL-Sheet_9
+      name: FLOOR_HEAVY_NEUTRAL-Sheet_8
       rect:
         serializedVersion: 2
-        x: 396
-        y: 8
-        width: 36
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da6f0cf571623724586cbc8e628ff1e8
-      internalID: 722800321
+      spriteID: 3f38a103fb56bfd42838de3fab551e0e
+      internalID: -2088965620
       vertices: []
       indices: 
       edges: []
@@ -324,8 +324,6 @@ TextureImporter:
     nameFileIdTable:
       FLOOR_HEAVY_NEUTRAL-Sheet_0: -1508479707
       FLOOR_HEAVY_NEUTRAL-Sheet_1: -2111805248
-      FLOOR_HEAVY_NEUTRAL-Sheet_10: 1049154560
-      FLOOR_HEAVY_NEUTRAL-Sheet_11: -1797614384
       FLOOR_HEAVY_NEUTRAL-Sheet_2: 1994474111
       FLOOR_HEAVY_NEUTRAL-Sheet_3: 1198814009
       FLOOR_HEAVY_NEUTRAL-Sheet_4: -1485530101
@@ -333,7 +331,6 @@ TextureImporter:
       FLOOR_HEAVY_NEUTRAL-Sheet_6: -721900794
       FLOOR_HEAVY_NEUTRAL-Sheet_7: 654107971
       FLOOR_HEAVY_NEUTRAL-Sheet_8: -2088965620
-      FLOOR_HEAVY_NEUTRAL-Sheet_9: 722800321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

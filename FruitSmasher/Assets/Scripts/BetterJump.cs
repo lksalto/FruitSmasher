@@ -31,6 +31,10 @@ public class BetterJump : MonoBehaviour
             {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (goDown - 1) * Time.deltaTime;
         }
+        if(Input.GetKeyUp(KeyCode.S))
+        {
+            rb.velocity
+        }
 
     }
 }

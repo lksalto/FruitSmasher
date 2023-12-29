@@ -10,12 +10,13 @@ public class PlayerMovement : MonoBehaviour
     public float hangingTime = 0.2f; // Time player can hang on the edge
     public float coyoteTime = 0.2f; // Time after leaving the ground where the player can still jump
     public float inputBufferTime = 0.1f; // Time to buffer jump input
+    public float horizontalInput = 0f;
     public SpriteRenderer sr;
     public LayerMask groundLayer;
     bool singleSClick = false;
-    [SerializeField] bool isGrounded;
+    public bool isGrounded;
+    bool canMove = true;
     [SerializeField] bool canDoubleJump;
-    private bool isHanging;
     private bool isJumping;
 
     [SerializeField] bool canPassThroughPlatform;
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private float coyoteTimer;
     private float inputBufferTimer;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private BoxCollider2D boxCollider;
 
     private bool canDropThroughPlatform = true;
@@ -32,12 +33,13 @@ public class PlayerMovement : MonoBehaviour
 
     private int originalLayer; // To store the original layer of the player
 
+    public Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
-        originalLayer = gameObject.layer;
+        canMove = true;
     }
 
     void Update()
@@ -45,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         HandleInput();
         CheckGrounded();
         CheckHanging();
+        CheckDoubleJump();
         CheckPassThroughPlatform();
         UpdateTimers();
     }
@@ -56,7 +59,11 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleInput()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        if(canMove)
+        {
+
+        
+        horizontalInput = Input.GetAxisRaw("Horizontal");
         if(horizontalInput < 0)
         {
             sr.flipX = true;
@@ -76,20 +83,29 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Double jump
-        if (Input.GetKeyDown(KeyCode.W) && canDoubleJump)
+        if (Input.GetKeyDown(KeyCode.W) && canDoubleJump && !(isGrounded || coyoteTimer > 0))
         {
             DoubleJump();
         }
 
         // Drop through platform
         //canPassThroughPlatform = Input.GetKey(KeyCode.S);
-        if (Input.GetKey(KeyCode.S) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
         {
             DropThroughPlatform();
         }
 
-        // Check if holding "S" to pass through platforms
-        
+        }
+        else
+        {
+            horizontalInput = 0;
+        }
+
+    }
+
+    void CheckDoubleJump()
+    {
+
     }
 
     void DropThroughPlatform()
@@ -114,8 +130,10 @@ public class PlayerMovement : MonoBehaviour
 
     void DoubleJump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, doubleJumpForce);
         canDoubleJump = false;
+        rb.velocity = Vector3.zero;
+        PerformJump();
+        Invoke("PerformJump", 0.07f);
     }
 
     void Move()
@@ -147,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckHanging()
     {
+        /*
         if (!isGrounded && !isJumping)
         {
             hangTimer += Time.deltaTime;
@@ -167,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
             isHanging = false;
             hangTimer = 0f;
         }
+        */
     }
 
     void CheckPassThroughPlatform()
@@ -198,5 +218,15 @@ public class PlayerMovement : MonoBehaviour
         coyoteTimer -= Time.deltaTime;
     }
 
+    public void SetCanMove(bool b)
+    {
+        canMove = b;
+    }
+
+    void PerformJump()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, doubleJumpForce, 0);
+        
+    }
 
 }
